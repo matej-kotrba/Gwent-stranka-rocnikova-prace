@@ -4,9 +4,12 @@
 <head>
   <title>Gwent: The Witcher Card Game - Guide</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="js/dist/css/lightbox.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" href="img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
   <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
   <meta name="description" content="Guide stránka ohledně hry Gwent: The Witcher Card Game">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +23,6 @@
 </head>
 
 <body>
-
   <header>
 
     <div class="content col-sm-10 col-md-8 col-lg-6 col-xl-4">
@@ -34,23 +36,20 @@
       allowfullscreen></iframe>
   </div>
   <main>
-
-
-
-    </div>
+    
     <div class="flex-box">
       <div class="dropdown">
         <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Základy hry
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="./uvod/uvod.html">Úvod</a>
           <a class="dropdown-item" href="#">Link 2</a>
           <a class="dropdown-item" href="#">Link 3</a>
         </div>
       </div>
       <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
+        <button type="button" id="rightbutton" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Frakce
         </button>
         <div class="dropdown-menu">
@@ -70,7 +69,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
+        <button type="button" id="rightbutton" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Více
         </button>
         <div class="dropdown-menu">
@@ -80,21 +79,81 @@
         </div>
       </div>
     </div>
+
+    <div id="asd" class="container">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li id="kolo" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li id="kolo" data-target="#myCarousel" data-slide-to="1"></li>
+          <li id="kolo" data-target="#myCarousel" data-slide-to="2"></li>
+          <li id="kolo" data-target="#myCarousel" data-slide-to="3"></li>
+          <li id="kolo" data-target="#myCarousel" data-slide-to="4"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div id="center-corusel" class="carousel-inner">
+          <div class="carousel-item active">
+            <a data-lightbox="roadtrip" href="img/gwent1.jpg">
+            <img id="imgsliders" src="./img/gwent1.jpg" alt="Gwent" width="500" height="300">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a data-lightbox="roadtrip" href="./img/gwent3.jpg">
+            <img id="imgsliders" src="./img/gwent3.jpg" alt="Gwent" width="500" height="300">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a data-lightbox="roadtrip" href="./img/gwent2.jpg">
+            <img id="imgsliders" src="./img/gwent2.jpg" alt="Gwent" width="500" height="300">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a data-lightbox="roadtrip" href="./img/gwent4.png">
+            <img id="imgsliders" src="./img/gwent4.png" alt="Gwent" width="500" height="300">
+          </a>
+          </div>
+          <div class="carousel-item">
+            <a data-lightbox="roadtrip" href="./img/gwent5.png">
+            <img id="imgsliders" src="./img/gwent5.png" alt="Gwent" width="500" height="300">
+          </a>
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a id="leftone"class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a id="rightone" class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      
+      </div>
+
+
+    </div>
   </main>
-  <footer class="container-fluid bg-dark p-3">
+  <footer id="footerr" class="container-fluid bg-dark p-3">
     <div class="row">
       <div id="zapati1" class="col-xl-4 col-lg-12 col-md-12 border-right p-2">
         <i id="neco" data-toggle="collapse" data-target="#demo" class="bg-dark border-dark"><i
             class="fa fa-id-card-o fa-3x" aria-hidden="true"></i></i>
         <div id="demo" class="collapse">Matěj Kotrba - IT1</div>
       </div>
-      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2">
+      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2 ">
         Matěj Kotrba - IT1
       </div>
-      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2 border-left">
-        <a href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw" id="odkaz" target="_blank"><i class="fa fa-youtube-play fa-3x pr-3"
-            aria-hidden="true"></i><a href="https://www.playgwent.com/en/" id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x"
-              aria-hidden="true"></i></a>
+      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2 border-left col-md-border-none">
+        <a href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw" id="odkaz" target="_blank"><i
+            class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i><a href="https://www.playgwent.com/en/"
+            id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3" aria-hidden="true"></i></a><a
+            href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank"
+            id="odkaz2"><i class="fa fa-steam fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.gog.com/game/gwent_the_witcher_card_game" target="_blank"><img src="./img/gog.PNG" alt="gog" width="50px" id="odkaz3"></a>
+
 
         </a>
       </div>
@@ -111,7 +170,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+    <script src="./js/dist/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
