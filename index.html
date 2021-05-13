@@ -26,7 +26,7 @@
   <header>
 
     <div class="content col-sm-10 col-md-8 col-lg-6 col-xl-4">
-      <h1>Gwent: The Witcher Card Game - Guide stránka</h1>
+      <h1>Gwent: The Witcher Card Game</h1>
     </div>
   </header>
   <div class="bg"></div>
@@ -36,7 +36,14 @@
       allowfullscreen></iframe>
   </div>
   <main>
-    
+    <!--Nebo pokracovani-->
+    <div id="button-stred" class="p-3">
+      <div id="nebo"><a href="#asd" id="btn-barva">Přejít na úvod</a>
+        <p id="p-btn" class="p-zindex">NEBO SI VYBERTE PODKATEGORII</p>
+      </div>
+    </div>
+
+    <!--Dropdowny-->
     <div class="flex-box">
       <div class="dropdown">
         <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
@@ -49,7 +56,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button type="button" id="rightbutton" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
+        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Frakce
         </button>
         <div class="dropdown-menu">
@@ -58,6 +65,7 @@
           <a class="dropdown-item" href="#">Link 3</a>
         </div>
       </div>
+
       <div class="dropdown">
         <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Historie
@@ -69,7 +77,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button type="button" id="rightbutton" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
+        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
           Více
         </button>
         <div class="dropdown-menu">
@@ -80,87 +88,148 @@
       </div>
     </div>
 
-    <div id="asd" class="container">
 
+
+    <div id="asd" class="container">
+      <h2 class="text-center">Základní principy hry</h2>
+      <!--Collapsibles-->
+      <button type="button" class="collapsible">Open Section 3</button>
+      <div class="content1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <button type="button" class="collapsible">Open Section 3</button>
+      <div class="content1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <button type="button" class="collapsible">Open Section 3</button>
+      <div class="content1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</p>
+      </div>
+      <br>
+      <h2>Obrázky</h2>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      
+
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li id="kolo" data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li id="kolo" data-target="#myCarousel" data-slide-to="1"></li>
-          <li id="kolo" data-target="#myCarousel" data-slide-to="2"></li>
-          <li id="kolo" data-target="#myCarousel" data-slide-to="3"></li>
-          <li id="kolo" data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
         </ul>
-        
+
         <!-- The slideshow -->
         <div id="center-corusel" class="carousel-inner">
           <div class="carousel-item active">
             <a data-lightbox="roadtrip" href="img/gwent1.jpg">
-            <img id="imgsliders" src="./img/gwent1.jpg" alt="Gwent" width="500" height="300">
-          </a>
+              <img class="imgsliders" src="./img/gwent1.jpg" alt="Gwent" width="500" height="300">
+            </a>
           </div>
           <div class="carousel-item">
             <a data-lightbox="roadtrip" href="./img/gwent3.jpg">
-            <img id="imgsliders" src="./img/gwent3.jpg" alt="Gwent" width="500" height="300">
-          </a>
+              <img class="imgsliders" src="./img/gwent3.jpg" alt="Gwent" width="500" height="300">
+            </a>
           </div>
           <div class="carousel-item">
             <a data-lightbox="roadtrip" href="./img/gwent2.jpg">
-            <img id="imgsliders" src="./img/gwent2.jpg" alt="Gwent" width="500" height="300">
-          </a>
+              <img class="imgsliders" src="./img/gwent2.jpg" alt="Gwent" width="500" height="300">
+            </a>
           </div>
           <div class="carousel-item">
             <a data-lightbox="roadtrip" href="./img/gwent4.png">
-            <img id="imgsliders" src="./img/gwent4.png" alt="Gwent" width="500" height="300">
-          </a>
+              <img class="imgsliders" src="./img/gwent4.png" alt="Gwent" width="500" height="300">
+            </a>
           </div>
           <div class="carousel-item">
             <a data-lightbox="roadtrip" href="./img/gwent5.png">
-            <img id="imgsliders" src="./img/gwent5.png" alt="Gwent" width="500" height="300">
-          </a>
+              <img class="imgsliders" src="./img/gwent5.png" alt="Gwent" width="500" height="300">
+            </a>
           </div>
         </div>
-        
+
         <!-- Left and right controls -->
-        <a id="leftone"class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </a>
-        <a id="rightone" class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-      
-      </div>
-
 
     </div>
+    <!--Top-button-->
+    <button onclick="topFunction()" id="top-btn" title="Scrolls back to top"><i class="fa fa-arrow-up fa-2x"
+        aria-hidden="true"></i>
+    </button>
   </main>
   <footer id="footerr" class="container-fluid bg-dark p-3">
     <div class="row">
-      <div id="zapati1" class="col-xl-4 col-lg-12 col-md-12 border-right p-2">
+      <div id="zapati1" class="col-xl-4 col-lg-4 col-md-12 border-right p-2">
         <i id="neco" data-toggle="collapse" data-target="#demo" class="bg-dark border-dark"><i
             class="fa fa-id-card-o fa-3x" aria-hidden="true"></i></i>
         <div id="demo" class="collapse">Matěj Kotrba - IT1</div>
       </div>
-      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2 ">
+      <div id="zapati" class="col-xl-4 col-lg-4 col-md-12 p-2 ">
         Matěj Kotrba - IT1
       </div>
-      <div id="zapati" class="col-xl-4 col-lg-12 col-md-12 p-2 border-left col-md-border-none">
+      <div id="zapati2" class="col-xl-4 col-lg-4 col-md-12 p-2 border-left col-md-border-none">
         <a href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw" id="odkaz" target="_blank"><i
-            class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i><a href="https://www.playgwent.com/en/"
-            id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3" aria-hidden="true"></i></a><a
-            href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank"
-            id="odkaz2"><i class="fa fa-steam fa-3x" aria-hidden="true"></i></a>
-            <a href="https://www.gog.com/game/gwent_the_witcher_card_game" target="_blank"><img src="./img/gog.PNG" alt="gog" width="50px" id="odkaz3"></a>
-
-
-        </a>
+            class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i></a><a href="https://www.playgwent.com/en/"
+          id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3" aria-hidden="true"></i></a><a
+          href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank" id="odkaz2"><i
+            class="fa fa-steam fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.gog.com/game/gwent_the_witcher_card_game" target="_blank"><img src="./img/gog.PNG"
+            alt="gog" width="50" id="odkaz3"></a>
       </div>
     </div>
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!--Collpasible-->
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -170,8 +239,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="./js/dist/js/lightbox-plus-jquery.min.js"></script>
-
+  <script src="./js/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

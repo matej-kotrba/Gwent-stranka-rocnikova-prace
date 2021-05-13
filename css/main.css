@@ -2,7 +2,9 @@ body, html {
     height: 100%;
     margin: 0;
     background-image: linear-gradient(to bottom right, rgb(1, 55, 42), black);
+    background-attachment: fixed !important;
     font-family: 'Girassol', cursive !important; 
+    scroll-behavior: smooth;
 }
 
 
@@ -32,10 +34,12 @@ body, html {
     background-color: rgba(38, 138, 100, 0.205);
     text-align: center;
     color: whitesmoke;
-    border: 10px solid transparent;
+    background-image: linear-gradient(to top right,rgba(26, 70, 49, 0.534), #2fad72dc);
+    background-origin: border-box;
     padding: 15px;
-    border-image: url(../img/border2.png) 12 stretch;
-
+    border-radius: 6px;
+    box-shadow: rgb(13, 92, 54) 1px 1px 70px ;
+    
 
 }
 
@@ -52,7 +56,7 @@ body, html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: -18%;
+    margin-top: 1%;
 
 }
 
@@ -64,12 +68,10 @@ body, html {
 
 .dropdown-item {
     font-size: 20px;
-}
-
-.dropdown-item {
-   text-align: center;
+    text-align: center;
     transition: 0.6s;
 }
+
 
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.986)!important;
@@ -77,14 +79,14 @@ body, html {
 }
 
 .dropdown-item:active {
-    background-color: rgba(24, 80, 43, 0.521) !important;
+    background-color: rgba(15, 48, 26, 0.521) !important;
     transition: 0.4s;
 }
 
 .center {
     text-align:center;
     width:100%;
-    top: 30%;
+    top: 25%;
     position: absolute;
   }
 
@@ -94,7 +96,7 @@ body, html {
     iframe {
         width: 60%;
       }
-    #imgsliders {
+    .imgsliders {
         width: 60%;
         height: 80%;
     } 
@@ -103,29 +105,60 @@ body, html {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    #zapati1 {
+        border: none !important;
+    }
+    #zapati2 {
+        border: none !important;
+    }
+
+    #nebo {
+    margin-top: -150px !important;
+}
+    .flex-box {
+    margin-top: 20px !important;
+}
+
 @media only screen and (max-width: 800px) {
     iframe {
         width: 80%;
       }
-      #imgsliders {
+      .imgsliders {
         width: 80%;
         height: 80%;
       }
       #asd {
         margin-top: -20%;
     }
+
+    #nebo {
+    margin-top: -250px !important;
+}
+    .flex-box {
+    margin-top: -100px !important;
+}
+    
 }
 
+
+}
 @media only screen and (max-width: 500px) {
     iframe {
         width: 100%;
       }
-      #imgsliders {
+      .imgsliders {
         width: 100%;
         height: 80%;
       }
       #asd {
         margin-top: -4%;
+    }
+    #nebo {
+        margin-top: -250px !important;
+    }
+    .flex-box {
+        margin-top: -100px !important;
     }
 }
 
@@ -149,6 +182,12 @@ footer {
     
 }
 
+#zapati2 {
+    text-align: center;
+    color: whitesmoke;
+    margin: auto;
+}
+
 #neco {
     cursor: pointer;
 }
@@ -166,10 +205,6 @@ footer {
     color: black;
 }
 
-button {
-    font-size: 20px !important;
-}
-
 #odkaz2 {
     color: white;
 }
@@ -184,10 +219,6 @@ button {
     margin-top: 15%;
 } 
 
-#kolo {
-    border: black 2px solid;
-}
-
 #footerr {
     margin-top: 30px;
 }
@@ -201,11 +232,123 @@ button {
     height: 60px;
     margin-bottom: 10px !important;
     transition: 1s;
+    font-size: 20px !important;
 }
 
 button:hover {
-    border-radius: 15px 5px 5px 15px;
+    border-radius: 15px 5px 15px 5px;
     transition: 1s;
+
 }
 
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -10px;
+ }
+
+h2 {
+    color: whitesmoke;
+    border-bottom: 2px solid white;
+    
+
+}
+
+#nebo {
+    position: relative;
+    color: white !important;
+    margin-top: -25px;
+}
+
+#button-stred {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -25%;
+    margin-bottom: 10px;
+    color: white !important;
+}
+
+#p-btn {
+    font-size: 20px;
+    margin-bottom: -0px;
+    margin-top: 90px;
+}
+
+#btn-barva {
+    text-decoration: none !important;
+    color: white !important;
+    padding: 25px 45px;
+    background: rgb(13, 122, 71);
+    border: black solid 1px;
+    border-radius: 15px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+#btn-barva:hover {
+    border-radius: 20px 20px 0px 0px;
+    transition: 0.4s;
+    background: rgb(9, 68, 41);
+}
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px !important;
+    width: 100% !important;
+    border: none;
+    text-align: left !important;
+    outline: none;
+    font-size: 25px !important;
+    height: auto;
+    margin-bottom: 0px !important;
+  }
+
+  .collapsible:hover {
+      background: none !important;
+      border: none !important;
+      border-radius: 0 !important;
+  }
+
+  .active1, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active1:after {
+    content: "\2212";
+  }
+  .content1 {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }  
