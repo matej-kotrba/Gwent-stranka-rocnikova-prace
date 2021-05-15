@@ -106,7 +106,7 @@ body, html {
 }
 
 @media only screen and (max-width: 1000px) {
-    #zapati1 {
+    #zapati {
         border: none !important;
     }
     #zapati2 {
@@ -254,7 +254,7 @@ footer {
 #zapati1 {
     text-align: center;
     color: whitesmoke;
-    
+    margin: auto;
 }
 
 #zapati2 {
@@ -327,6 +327,10 @@ h2 {
     border-bottom: 2px solid white;
     
 
+}
+
+.btn-dark {
+    background-color: #777 !important;
 }
 
 #nebo {
@@ -435,3 +439,7 @@ h2 {
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }  
+
+#karta {
+    width: 20% !important;
+}  
