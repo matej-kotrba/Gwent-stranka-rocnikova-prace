@@ -37,10 +37,10 @@ body, html {
     background-image: linear-gradient(to top right,rgba(26, 70, 49, 0.534), #2fad72dc);
     background-origin: border-box;
     padding: 15px;
+    border: #2fad72dc solid 1px;
     border-radius: 6px;
     box-shadow: rgb(13, 92, 54) 1px 1px 70px ;
-    
-
+    text-shadow: black 2px 2px;
 }
 
 .content > h2 {
@@ -347,12 +347,14 @@ h2 {
     margin-top: -25%;
     margin-bottom: 10px;
     color: white !important;
+    text-shadow: black 1px 1px;
 }
 
 #p-btn {
     font-size: 20px;
     margin-bottom: -0px;
     margin-top: 90px;
+    text-shadow: black 2px 2px;
 }
 
 #btn-barva {
@@ -409,6 +411,7 @@ h2 {
     height: auto;
     margin-bottom: 0px !important;
     z-index: 10;
+    text-shadow: black 1px 1px;
   }
 
   .collapsible:hover {
@@ -419,6 +422,7 @@ h2 {
 
   .active1, .collapsible:hover {
     background-color: #555;
+    transition: 0.5s !important;
   }
 
   .collapsible:after {
@@ -443,3 +447,15 @@ h2 {
 #karta {
     width: 20% !important;
 }  
+
+.content1 {
+    font-size: 20px;
+}
+
+.dropdown-toggle {
+    text-shadow: black 1px 1px;
+}
+
+h2 {
+    text-shadow: black 3px 3px;
+}
