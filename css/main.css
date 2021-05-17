@@ -119,6 +119,9 @@ body, html {
     .flex-box {
     margin-top: 20px !important;
 }
+    #p-btn {
+        font-size: 20px !important;
+    }
 
 @media only screen and (max-width: 800px) {
     iframe {
@@ -296,6 +299,7 @@ footer {
 
 #footerr {
     margin-top: 30px;
+        background: rgb(13, 58, 44) !important;
 }
 
 .carousel-inner img {
@@ -311,11 +315,8 @@ button {
 }
 
 button:hover {
-    border-radius: 15px 5px 15px 5px;
-    transition: 1s;
-
+    background: rgb(8, 46, 36) !important;
 }
-
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -330,7 +331,8 @@ h2 {
 }
 
 .btn-dark {
-    background-color: #777 !important;
+    background-color: rgb(22, 80, 61) !important;
+    border: black solid 2px !important;
 }
 
 #nebo {
@@ -351,7 +353,7 @@ h2 {
 }
 
 #p-btn {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: -0px;
     margin-top: 90px;
     text-shadow: black 2px 2px;
@@ -362,7 +364,8 @@ h2 {
     text-decoration: none !important;
     color: white !important;
     padding: 25px 45px;
-    background: rgb(13, 122, 71);
+    border: black solid 2px;
+    background-color: rgb(22, 80, 61);
     box-shadow: 0 9px grey;
     border-radius: 15px;
     transition: 0.4s;
@@ -376,7 +379,7 @@ h2 {
 }
 
 #btn-barva:active {
-    background-color: #3e8e41;
+    background-color: #071f0f;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -399,7 +402,7 @@ h2 {
   }
   
   .collapsible {
-    background-color: #777;
+    background-color: rgb(16, 58, 44);
     color: white;
     cursor: pointer;
     padding: 18px !important;
@@ -442,6 +445,7 @@ h2 {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
   }  
 
 #karta {
