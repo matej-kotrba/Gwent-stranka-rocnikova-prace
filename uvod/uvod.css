@@ -1,0 +1,106 @@
+header {
+    background-image: url("../img/pozadi-header.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 60px;
+    text-align: center;
+    border: black 5px solid;
+
+}
+
+body {
+    background-image: url("../img/wooden-background.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+h1 {
+    font-size: 60px !important;
+    font-family: 'Girassol', cursive !important;
+    text-shadow: 5px 5px 3px black;
+}
+
+main {
+    border:black solid 2px;
+    border-top: none;
+    background-color: rgba(245, 245, 245, 0.8505) !important;
+}
+
+.active {
+    text-decoration: overline solid white 5px !important;
+}
+
+.nav-item {
+    transition: 0.3s;
+    text-decoration: overline solid white 1px;
+}
+
+.nav-item:hover {
+    text-decoration: overline solid white 5px !important;
+    transition: 0.3s;
+}
+
+/* #navbarr {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+}
+
+.btn-secondary {
+    color: white !important;
+}
+
+.active {
+    background: rgb(82, 82, 82) !important;
+}
+
+*/
+
+nav {
+    background-image: url(../img/navbar2.PNG) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+a {
+    color: whitesmoke !important;
+}
+
+h2 {
+    text-decoration: underline solid black 2px;
+    font-size: 40px !important;
+    text-align: left;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-img {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .main-img {
+        width: 100%;
+    }
+    
+}

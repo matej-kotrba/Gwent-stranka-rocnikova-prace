@@ -1,0 +1,296 @@
+header {
+    background-image: url("../img/frakce-pozadi.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 60px;
+    text-align: center;
+    border: black 5px solid;
+
+}
+
+body {
+    background-image: url("../img/wooden-background.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+h1 {
+    font-size: 60px !important;
+    font-family: 'Girassol', cursive !important;
+    text-shadow: 5px 5px 3px black;
+}
+
+main {
+    border:black solid 2px;
+    border-top: none;
+    background-color: rgba(245, 245, 245, 0.8505) !important;
+}
+
+/* #navbarr {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+}
+
+.btn-secondary {
+    color: white !important;
+}
+
+.active {
+    background: rgb(82, 82, 82) !important;
+}
+
+*/
+
+nav {
+    background-image: url(../img/navbar2.PNG) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+a {
+    color: whitesmoke !important;
+}
+
+h2 {
+    text-decoration: underline solid black 2px;
+    font-size: 40px !important;
+    text-align: left;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-img {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .main-img {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 340px) {
+    .main-img {
+        width: 100%;
+    }
+    h2 {
+        font-size: 30px !important;
+    }
+    
+}
+
+.active {
+    text-decoration: overline solid white 5px !important;
+}
+
+.nav-item {
+    transition: 0.3s;
+    text-decoration: overline solid white 1px;
+}
+
+.nav-item:hover {
+    text-decoration: overline solid white 5px !important;
+    transition: 0.3s;
+}
+
+.flex-box {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/syndicate.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box1 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/skellige.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/northernrealms.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box3 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/monster.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box4 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/scoiateal.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box5 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    border: black solid 1px;
+    background-image: url(../img/nilfgaard.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 0;
+    filter:grayscale(1);
+    transition: 0.5s;
+    border-radius: 30px 30px 0 0;
+    margin-top: 20px;
+    
+}
+
+.flex-box:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box1:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box2:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box3:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box4:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box5:hover {
+    filter: none !important;
+    transition: 0.5s;
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.flex-box > h2 {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex-box1 > h2 {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex-box2 > h2 {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex-box3 > h2 {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex-box4 > h2 {
+    color: white !important;
+    text-decoration: none;
+}
+
+.flex-box5 > h2 {
+    color: white !important;
+    text-decoration: none;
+}
