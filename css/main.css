@@ -467,7 +467,7 @@ h2 {
 #syn:hover {
     background-image: url(../img/syn.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -476,7 +476,7 @@ h2 {
 #ske:hover {
     background-image: url(../img/ske.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -485,7 +485,7 @@ h2 {
 #nor:hover {
     background-image: url(../img/nor.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -494,7 +494,7 @@ h2 {
 #mon:hover {
     background-image: url(../img/mon.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -503,7 +503,7 @@ h2 {
 #sco:hover {
     background-image: url(../img/sco.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -512,7 +512,7 @@ h2 {
 #nil:hover {
     background-image: url(../img/nil.png);
     transition: 0.5s;
-    color: white;
+    color: white !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
