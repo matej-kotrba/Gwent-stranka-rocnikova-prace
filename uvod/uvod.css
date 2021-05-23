@@ -58,6 +58,10 @@ main {
 
 */
 
+#center-text {
+    margin: 0 auto;
+}
+
 nav {
     background-image: url(../img/navbar2.png) !important;
     background-repeat: no-repeat !important;
@@ -72,9 +76,11 @@ a {
 h2 {
     text-decoration: underline solid black 2px;
     font-size: 40px !important;
-    text-align: left;
+    text-align: center;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 p {
@@ -103,4 +109,68 @@ figure {
         width: 100%;
     }
     
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+#syn:hover {
+    background-image: url(../img/syn.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#ske:hover {
+    background-image: url(../img/ske.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#nor:hover {
+    background-image: url(../img/nor.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#mon:hover {
+    background-image: url(../img/mon.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#sco:hover {
+    background-image: url(../img/sco.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#nil:hover {
+    background-image: url(../img/nil.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#obe:hover {
+    background: rgb(126, 126, 126) !important;
+    transition: 0.5s;
+    color: white !important;
 }
