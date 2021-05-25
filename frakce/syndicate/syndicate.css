@@ -1,0 +1,10 @@
+header {
+    background-image: url("../../img/syn.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 60px;
+    text-align: center;
+    border: black 5px solid;
+
+}
