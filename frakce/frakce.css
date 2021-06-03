@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
+    font-family:Arial, Helvetica, sans-serif !important;
 }
 
 h1 {
@@ -156,6 +157,9 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 0 0;
     margin-top: 20px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
     
 }
 
@@ -174,6 +178,9 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 0 0;
     margin-top: 20px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
     
 }
 
@@ -192,6 +199,9 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 0 0;
     margin-top: 20px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
     
 }
 
@@ -210,6 +220,9 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 0 0;
     margin-top: 20px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
     
 }
 
@@ -228,7 +241,14 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 0 0;
     margin-top: 20px;
+    border-top:0;
+    border-left:0;
+    border-right:0;
     
+}
+
+a:hover {
+    text-decoration-line: none !important;
 }
 
 .flex-box:hover {
@@ -243,6 +263,7 @@ figure {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    zoom: 20% !important;
 }
 
 .flex-box2:hover {
