@@ -1,7 +1,12 @@
 .active {
-    text-decoration: overline solid white 5px !important;
+    border-top: whitesmoke 5px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 15px;
+    padding-bottom: 15px !important;
 }
-
+/*
 .nav-item {
     transition: 0.3s;
     text-decoration: overline solid white 1px;
@@ -11,7 +16,14 @@
     text-decoration: overline solid white 5px !important;
     transition: 0.3s;
 }
-
+*/
+.nav-link {
+    border-top: whitesmoke 1px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+}
 
 
 body {
