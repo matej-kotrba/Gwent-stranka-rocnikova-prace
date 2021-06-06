@@ -200,3 +200,7 @@ figure {
         height: 80%;
       }
 }
+
+.odkaz {
+    color: rgb(52, 127, 214) !important;
+}

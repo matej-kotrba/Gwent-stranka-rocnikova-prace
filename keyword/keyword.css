@@ -232,3 +232,7 @@ table {
 th {
     text-align: center !important;
 }
+
+.odkaz {
+    color: rgb(52, 127, 214) !important;
+}
