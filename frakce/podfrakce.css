@@ -1,11 +1,25 @@
-.active {
-    border-top: whitesmoke 5px solid;
+.active1 {
+    border-top: whitesmoke 5px solid !important;
     padding-top: 0px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-right: 15px;
-    padding-bottom: 15px !important;
+    margin-right: 10px;
 }
+
+.nav-link {
+    border-top: whitesmoke 1px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    transition: 0.3s;
+    border-top: whitesmoke 5px solid !important;
+}
+
 /*
 .nav-item {
     transition: 0.3s;
@@ -17,14 +31,6 @@
     transition: 0.3s;
 }
 */
-.nav-link {
-    border-top: whitesmoke 1px solid;
-    padding-top: 0px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-right: 10px;
-}
-
 
 body {
     background-image: url("../img/wooden-background.png") !important;
@@ -159,6 +165,11 @@ figure {
     margin: auto;
 }
 
+.imgsliders {
+    width: 600px;
+    height: 320px;
+}
+
 @media only screen and (max-width: 1200px) {
     .imgsliders {
         width: 60%;
@@ -171,6 +182,16 @@ figure {
         width: 80%;
         height: 80%;
       }   
+}
+
+@media only screen and (max-width: 574px) {
+    .nav-link {
+        border-top: none !important;
+    }
+    .nav-link:hover {
+        border-top: none !important;
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
   <title>Základy hry</title>
@@ -8,10 +8,11 @@
   <link rel="icon" href="../img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="./uvod.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
   <meta name="description" content="Základní pravidla hry Gwent">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,37 +21,41 @@
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <a class="navbar-brand" href="../index.html"><img src="../img/navbar-logo.png" width="30px"></a>
-      <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-          aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
-        </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                  <a class="nav-link" href="#">Pravidla hry <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frakce </a> 
-                <div class="dropdown-menu" aria-labelledby="dropdownId1">
-                  <a class="dropdown-item" id="obe" href="../frakce/index.html">Obecné informace</a>
-                  <a class="dropdown-item" id="syn" href="../frakce/syndicate/syndicate.html">Syndicate</a>
-                  <a class="dropdown-item" id="ske" href="../frakce/skellige/skellige.html">Skellige</a>
-                  <a class="dropdown-item" id="nor" href="../frakce/northern-realms/northern-realms.html">Northern Realms</a>
-                  <a class="dropdown-item" id="mon" href="../frakce/monsters/monsters.html">Monsters</a>
-                  <a class="dropdown-item" id="sco" href="../frakce/scoiatael/scoiatael.html">Scoia'tael</a>
-                  <a class="dropdown-item" id="nil" href="#">Nilfgaard</a>
-              </div>
-            </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
-                      <a class="dropdown-item" href="#">Action 1</a>
-                      <a class="dropdown-item" href="#">Action 2</a>
-                  </div>
-              </li>
-          </ul>
-          
-      </div>
+    <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/navbar-logo.png"
+        alt="Domovská stránka"></a>
+    <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse"
+      data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+      aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Pravidla hry <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Frakce </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId1">
+            <a class="dropdown-item" id="obe" href="../frakce/index.html">Obecné informace</a>
+            <a class="dropdown-item" id="syn" href="../frakce/syndicate/syndicate.html">Syndicate</a>
+            <a class="dropdown-item" id="ske" href="../frakce/skellige/skellige.html">Skellige</a>
+            <a class="dropdown-item" id="nor" href="../frakce/northern-realms/northern-realms.html">Northern Realms</a>
+            <a class="dropdown-item" id="mon" href="../frakce/monsters/monsters.html">Monsters</a>
+            <a class="dropdown-item" id="sco" href="../frakce/scoiatael/scoiatael.html">Scoia'tael</a>
+            <a class="dropdown-item" id="nil" href="../frakce/nilfgaard/nilfgaard.html">Nilfgaard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Efekty</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="../keyword/keyword.html">Keywords</a>
+            <a class="dropdown-item" href="../statusy/statusy.html">Statusy</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
   </nav>
   <header class="container-fluid">
     <h1 class="text-white">Pravidla hry</h1>
@@ -59,25 +64,46 @@
   <main class="container">
     <div class="row">
       <div id="center-text" class="col-lg-8 col-md-10 col-sm-12">
+        <h2>Rozdělení karet hry</h2>
+        <p>Karty se dělí do 4 kategorií: Unit, Special, Artifact a Stratagem. Každá karta má také svou vzácnost a taky
+          cenu, která při skládání vašeho balíku určuje celkovou cenu kterou nemůžete překročit.
+          Unit jsou jednotky, které se hrají na hrací desku, Special jsou karty, které se zahrají a tím něco udělají
+          nebo vyvolají (například row effect, to je efekt, který se umístí na jednu z linií (melee a siege)
+          a potom každé kolo až do skončení tohoto efektu, což je u něho napsané jako dlouho bude trvat, bude dělat
+          nějaký efekt) ale sami o sobě se hned poté přesunou do graveyard, což je místo kam se přesunují karty, které
+          už byly použity
+          nebo v případě unit nebo artifact po tom co jsou odstraněni z desky, což u unit je když síla klesne na 0.
+          Artifact jsou jednotky bez síly,
+          které se ale také stejně jako unit hrají na stůl.</p>
         <h2>Průběh hry</h2>
-        <p>Vaším cílem hry je zvítězit ve 2 ze 3 kol. 
-          Na začátku hry si každý hráč bere 10 karet z toho může 2 nebo 3 (podle toho jestli začíná) vyměnit za jinou náhodnou kartu z vašeho balíku.
-          Ten co začíná taky dostane svůj "Stratagem" (více o Stratagemech), který je podle toho jaký jste si vybrali do svého balíku. Každý hráč 
-          může hrát pouze 1, ale za to libovolnou kartu z jeho ruky (karty, které aktuálně máte), proto je tato hra o strategii naplánovat si 
-          jestli chcete vaše nejlepší karty zahrát na začátku nebo si je ponechat na konec. Každý hráč má také svou schopnost vůdce ("Leader Ability"), kterou
-          si každý při skládání balíku může taky vybrat. Tato schopnost většinou udává jaká bude strategie kolem, které budete chtít hrát.</p>
-          <figure>
-          <img class="main-img" src="../img/ukazka.PNG" alt="Ukázka vytváření balíku" width="70%">
+        <p>Vaším cílem hry je zvítězit ve 2 ze 3 kol.
+          Na začátku hry si každý hráč bere 10 karet z toho může 2 nebo 3 (podle toho jestli začíná) vyměnit za jinou
+          náhodnou kartu z vašeho balíku.
+          Ten co začíná taky dostane svůj "Stratagem" (více o Stratagemech), který je podle toho jaký jste si vybrali do
+          svého balíku. Každý hráč
+          může hrát každý tah pouze 1, ale za to libovolnou kartu z jeho ruky (karty, které aktuálně máte), proto je tato hra o
+          strategii naplánovat si
+          jestli chcete vaše nejlepší karty zahrát na začátku nebo si je ponechat na konec. Každý hráč má také svou
+          schopnost vůdce ("Leader Ability"), kterou
+          si každý při skládání balíku může taky vybrat. Tato schopnost většinou udává jaká bude strategie kolem, které
+          budete chtít hrát.</p>
+        <figure>
+          <img class="main-img" src="../img/ukazka.PNG" alt="Ukázka vytváření balíku">
           <figcaption>Ukázka stavění balíku</figcaption>
         </figure>
         <p>
-          Karty narozdíl od jiných karetních her nemají životy
-          a útok ale pouze sílu a různé efekty, které mění funkce karet (více o efektech karet - "keyword"). Hrací deska se dělí na 4 řady - Melee a Ranged 
-          každá pro oba hráče. Pokud již nechcete dále hrát, jelikož už například moc prohráváte nebo naopak vyhráváte nebo prostě nechcete toto kolo
+          Karty na rozdíl od jiných karetních her nemají životy
+          a útok ale pouze sílu a různé efekty, které mění funkce karet (více o efektech karet - "keyword"). Hrací deska
+          se dělí na 4 řady - Melee a Ranged
+          každá pro oba hráče. Pokud již nechcete dále hrát, jelikož už například moc prohráváte nebo naopak vyhráváte
+          nebo prostě nechcete toto kolo
           dál hrát tak místo karty můžete použít "Pass", což
-          znamená že už nic během tohoto kola dělat nechcete a hraje pouze váš soupeř, který má následně navybranou buď hrát dál nebo udělat totéž.  
-          Ve druhém kole se následně berou 3 karty s možností výměnny 2, totéž se děje i ve 3. posledním kole, do kterého se avšak nemusíte dostat
-          pokud jeden z hráčů vyhraje obě předešlé kola. V 1. kole rozhoduje o tom kdo hraje první náhoda, ve 2. a 3. potom ten kdo vyhrál kolo předešlé.
+          znamená že už nic během tohoto kola dělat nechcete a hraje pouze váš soupeř, který má následně navybranou buď
+          hrát dál nebo udělat totéž.
+          Ve druhém kole se následně berou 3 karty s možností výměnny 2, totéž se děje i ve 3. posledním kole, do
+          kterého se avšak nemusíte dostat
+          pokud jeden z hráčů vyhraje obě předešlé kola. V 1. kole rozhoduje o tom kdo hraje první náhoda, ve 2. a 3.
+          potom ten kdo vyhrál kolo předešlé.
         </p>
       </div>
     </div>

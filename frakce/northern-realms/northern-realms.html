@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
-    <title>Skellige</title>
+    <title>Northern Realms</title>
     <!-- Required meta tags -->
     <link rel="icon" href="../../img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
     <meta charset="utf-8">
@@ -14,6 +14,7 @@
     <meta name="description" content="Frakce Syndicate ve hře Gwent">
     <link href="../podfrakce.css" rel="stylesheet">
     <link href="./northern-realms.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <link href="../../js/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,7 +23,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <a class="navbar-brand" href="../../index.html"><img src="../../img/navbar-logo.png" width="30px"></a>
+        <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../img/navbar-logo.png" alt="Domovská stránka"></a>
         <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
           </button>
@@ -31,8 +32,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../../uvod/uvod.html">Pravidla hry</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frakce <span class="sr-only">(current)</span></a> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active1" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frakce <span class="sr-only">(current)</span></a> 
                     <div class="dropdown-menu" aria-labelledby="dropdownId1">
                       <a class="dropdown-item" id="obe" href="../index.html">Obecné informace</a>
                       <a class="dropdown-item" id="syn" href="../syndicate/syndicate.html">Syndicate</a>
@@ -40,14 +41,14 @@
                       <a class="dropdown-item" id="nor" href="#">Northern Realms</a>
                       <a class="dropdown-item" id="mon" href="../monsters/monsters.html">Monsters</a>
                       <a class="dropdown-item" id="sco" href="../scoiatael/scoiatael.html">Scoia'tael</a>
-                      <a class="dropdown-item" id="nil" href="#">Nilfgaard</a>
+                      <a class="dropdown-item" id="nil" href="../nilfgaard/nilfgaard.html">Nilfgaard</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Efekty</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId2">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="../../keyword/keyword.html">Keywords</a>
+                        <a class="dropdown-item" href="../../statusy/statusy.html">Statusy</a>
                     </div>
                 </li>
             </ul>
@@ -63,13 +64,14 @@
         <div id="center-text" class="col-lg-8 col-md-10 col-sm-12">
           <h2>Strategie</h2>
           <ul class="ul-text">
-              <li>Northern Realms je frakce, která mývá slabější začátek, avšak čím delší je kolo tím více nabírá na síle díky kartám, které jsou designovány na 
-              získání převahy díky času, který existují. Jako hlavní strategií se bere hlavně siege engine (více o siege engine), boost (více o boost) nebo kaedwin revenant
+              <li>Northern Realms je frakce, která mívá slabší začátek, avšak čím delší je kolo tím více nabírá na síle díky některým kartám, které každé kolo 
+             zaktivují svou schopnost a tím získávají vetší celkovou hodnotu, kterou do hry přispěly. Jako hlavní strategií se bere hlavně siege engine (více o siege engine),
+              boost (více o boost) nebo kaedweni revenant
                (ukázka karty dole)   
                   
               </li>
               <li>Karty získávají výhodu hlavně svou existencí, jelikož spousta karet je udělaná aby získávala bonusovou sílu, buď ze spojenců nebo ze samotného
-                  bytí. V případě kaedwin revenantů potom dorážením nepřátel.
+                  bytí. V případě kaedweni revenantů potom dorážením nepřátel.
               </li>
           </ul>
           <div id="carouselId" class="carousel slide" data-ride="carousel">
@@ -80,18 +82,18 @@
               </ol>
               <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
-                        <a data-lightbox="roadtrip" href="../../img/syndicate1.png">
-                      <img class="imgsliders" src="../../img/syndicate1.png" alt="First slide" width="600px" height="320px">
+                        <a data-lightbox="roadtrip" href="../../img/revenant.png">
+                      <img class="imgsliders" src="../../img/revenant.png" alt="First slide">
                       </a>
                   </div>
                   <div class="carousel-item">
-                    <a data-lightbox="roadtrip" href="../../img/syndicate2.png">
-                      <img class="imgsliders" src="../../img/syndicate2.png" alt="Second slide" width="600px" height="320px">
+                    <a data-lightbox="roadtrip" href="../../img/northernrealms.png1.png">
+                      <img class="imgsliders" src="../../img/northernrealms.png1.png" alt="Second slide">
                       </a>
                   </div>
                   <div class="carousel-item">
-                    <a data-lightbox="roadtrip" href="../../img/syndicate3.png">
-                      <img class="imgsliders" src="../../img/syndicate3.png" alt="Third slide" width="600px" height="320px">
+                    <a data-lightbox="roadtrip" href="../../img/northernrealms3.png">
+                      <img class="imgsliders" src="../../img/northernrealms3.png" alt="Third slide">
                       </a>
                   </div>
               </div>

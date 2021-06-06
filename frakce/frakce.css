@@ -94,6 +94,16 @@ figure {
     
 }
 
+@media only screen and (max-width: 574px) {
+    .nav-link {
+        border-top: none !important;
+    }
+    .nav-link:hover {
+        border-top: none !important;
+    }
+    
+}
+
 @media only screen and (max-width: 340px) {
     .main-img {
         width: 100%;
@@ -109,17 +119,25 @@ figure {
 }
 
 .active {
-    text-decoration: overline solid white 5px !important;
+    border-top: whitesmoke 5px solid !important;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
 }
 
-.nav-item {
+.nav-link {
+    border-top: whitesmoke 1px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
     transition: 0.3s;
-    text-decoration: overline solid white 1px;
 }
 
-.nav-item:hover {
-    text-decoration: overline solid white 5px !important;
+.nav-link:hover {
     transition: 0.3s;
+    border-top: whitesmoke 5px solid !important;
 }
 
 .flex-box {
@@ -140,6 +158,36 @@ figure {
     border-top:0;
     border-left:0;
     border-right:0;
+}
+
+.flex-box > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
+}
+
+.flex-box1 > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
+}
+
+.flex-box2 > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
+}
+
+.flex-box3 > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
+}
+
+.flex-box4 > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
+}
+
+.flex-box5 > h2 {
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Girassol', cursive !important;
 }
 
 .flex-box1 {
@@ -386,4 +434,9 @@ a:hover {
     background: rgb(126, 126, 126) !important;
     transition: 0.5s;
     color: white !important;
+}
+
+.ul-text > li {
+    font-size: 18px;
+    padding-top: 10px;
 }

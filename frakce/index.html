@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <title>Frakce</title>
@@ -8,12 +8,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="./frakce.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
     <meta name="description" content="Frakce ve hře Gwent The Witcher Card Game">
-    <link href="../css/style.css">
+    <meta name="keyword" content="Syndicate, Monsters, Skellige, Northern Realms, Scoia'tael, Nilfgaard">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,7 +22,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <a class="navbar-brand" href="../index.html"><img src="../img/navbar-logo.png" width="30px"></a>
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/navbar-logo.png" alt="Domovská stránka"></a>
         <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
           </button>
@@ -30,8 +31,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../uvod/uvod.html">Pravidla hry</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frakce <span class="sr-only">(current)</span></a> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Frakce <span class="sr-only">(current)</span></a> 
                     <div class="dropdown-menu" aria-labelledby="dropdownId1">
                       <a class="dropdown-item" id="obe" href="../frakce/index.html">Obecné informace</a>
                       <a class="dropdown-item" id="syn" href="./syndicate/syndicate.html">Syndicate</a>
@@ -43,10 +44,10 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Efekty</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="../keyword/keyword.html">Keywords</a>
+                        <a class="dropdown-item" href="../statusy/statusy.html">Statusy</a>
                     </div>
                 </li>
             </ul>
@@ -61,18 +62,17 @@
       <div class="row">
         <div id="center-text" class="col-lg-8 col-md-10 col-sm-12">
           <h2>Funkce frakcií</h2>
-          <ul>
+          <ul class="ul-text">
             <li>
-          <p>Hra se dělí do 6 frakcí, které se dají použít pro sestavení vašeho balíku. Každá frakce má vlastní schopnosti vůdce a karty, k tomu jsou
+          Hra se dělí do 6 frakcí, které se dají použít pro sestavení vašeho balíku. Každá frakce má vlastní schopnosti vůdce a karty, k tomu jsou
             k dispozici také karty neutrální, které jsou dostupné pro všechny frakce.</li>
-          </p>
+          
           <li>
-          <p>Každá frakce má vlastní způsoby vítězství ("victory condition"), kolem kterých se snaží hrát a využít tak síli každé frakce k vítězství.</p>
+          Každá frakce má vlastní způsoby vítězství ("victory condition"), kolem kterých se snaží hrát a využít tak síli každé frakce k vítězství.
         </li>
       <li>
-        <p>V podrobnějších popisech budou vyjmenovány hlavní strategie dané frakce, což ale neznamená, že se hrají pouze tyto, nicméně ostatní menší strategie
+        V podrobnějších popisech budou vyjmenovány hlavní strategie dané frakce, což ale neznamená, že se hrají pouze tyto, nicméně ostatní menší strategie
           jsou velmi proměnlivé a proto je zde neuvádím.
-        </p>
       </li></ul>
         </div>
       </div>
@@ -103,11 +103,11 @@
                 <div class="flex-box4"><h2>Scoia'tael</h2></div>
               </a>
           </div>
-          <div class="col-xl-4 col-md-6 col-sm-12">
-            <div class="flex-box5">
-              <a href="#"><h2>Nilfgaard</h2></a>
-            </div>
-          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">         
+            <a href="./nilfgaard/nilfgaard.html">
+              <div class="flex-box5"><h2>Nilfgaard</h2></div>
+            </a>
+        </div>
       </div>
     </main>
   

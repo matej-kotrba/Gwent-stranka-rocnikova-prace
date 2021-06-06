@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
-    <title>Syndicate</title>
+    <title>Monsters</title>
     <!-- Required meta tags -->
     <link rel="icon" href="../../img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
     <meta charset="utf-8">
@@ -14,6 +14,7 @@
     <meta name="description" content="Frakce Syndicate ve hře Gwent">
     <link href="../podfrakce.css" rel="stylesheet">
     <link href="./monsters.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <link href="../../js/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,7 +23,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <a class="navbar-brand" href="../../index.html"><img src="../../img/navbar-logo.png" width="30px"></a>
+        <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../img/navbar-logo.png" alt="Domovská stránka"></a>
         <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse"
             data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
@@ -32,8 +33,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../../uvod/uvod.html">Pravidla hry</a>
                 </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active1" href="#" id="dropdownId1" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Frakce <span class="sr-only">(current)</span></a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId1">
                         <a class="dropdown-item" id="obe" href="../index.html">Obecné informace</a>
@@ -42,15 +43,15 @@
                         <a class="dropdown-item" id="nor" href="../northern-realms/northern-realms.html">Northern Realms</a>                          
                         <a class="dropdown-item" id="mon" href="#">Monsters</a>
                         <a class="dropdown-item" id="sco" href="../scoiatael/scoiatael.html">Scoia'tael</a>
-                        <a class="dropdown-item" id="nil" href="#">Nilfgaard</a>
+                        <a class="dropdown-item" id="nil" href="../nilfgaard/nilfgaard.html">Nilfgaard</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        aria-haspopup="true" aria-expanded="false">Efekty</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId2">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="../../keyword/keyword.html">Keywords</a>
+                        <a class="dropdown-item" href="../../statusy/statusy.html">Statusy</a>
                     </div>
                 </li>
             </ul>
@@ -66,14 +67,17 @@
             <div id="center-text" class="col-lg-8 col-md-10 col-sm-12">
                 <h2>Strategie</h2>
                 <ul class="ul-text">
-                    <li>Monstra mají 2 základní strategie: consume (více o consume), ve které požíráte vlastní karty k
-                        zaktivování efektů a také zesilování vlastních karet, které
-                        získávají sílu od těch které sežerou. Další takovou strategií je bleed, kterým trpí nepřátelé na které je 
-                        použit a ti následně ztráci body sílu podle dělky, který bleed má. 
+                    <li>Monstra mají 3 hlavní strategie: consume (více o consume), ve které "požíráte" vlastní karty k
+                        zaktivování efektů a také zesílení karet, které je tuto akci provedou.
+                        Bleed, kterým trpí nepřátelé na které je 
+                        použit a ti následně ztráci body sílu podle dělky, který bleed má a Wild hunt, což je kategorie karty,
+                        která spolu dobře funguje. 
+
 
                     </li>
-                    <li>Pokud se hraje kolem consume tak se většinou hraje kolem posmrtných efektů karet (deathwish). V bleed strategiích
-                        jde hlavně o zesílení vlastních jednotek poškozovním těch nepřátelských.
+                    <li>Pokud se consume tak se většinou hraje kolem posmrtných efektů karet (deathwish). V bleed strategiích
+                        jde hlavně o zesílení vlastních jednotek poškozovním těch nepřátelských a ve Wild hunt balíku jde
+                        o kombinaci karet s touto kategorií a row effect Frost.
                     </li>
                 </ul>
                 <div id="carouselId" class="carousel slide" data-ride="carousel">
@@ -81,24 +85,27 @@
                         <li data-target="#carouselId" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselId" data-slide-to="1"></li>
                         <li data-target="#carouselId" data-slide-to="2"></li>
+                        <li data-target="#carouselId" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <a data-lightbox="roadtrip" href="../../img/syndicate1.png">
-                                <img class="imgsliders" src="../../img/syndicate1.png" alt="First slide" width="600px"
-                                    height="320px">
+                            <a data-lightbox="roadtrip" href="../../img/monster1.png">
+                                <img class="imgsliders" src="../../img/monster1.png" alt="First slide">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a data-lightbox="roadtrip" href="../../img/syndicate2.png">
-                                <img class="imgsliders" src="../../img/syndicate2.png" alt="Second slide" width="600px"
-                                    height="320px">
+                            <a data-lightbox="roadtrip" href="../../img/monster2.png">
+                                <img class="imgsliders" src="../../img/monster2.png" alt="Second slide">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a data-lightbox="roadtrip" href="../../img/syndicate3.png">
-                                <img class="imgsliders" src="../../img/syndicate3.png" alt="Third slide" width="600px"
-                                    height="320px">
+                            <a data-lightbox="roadtrip" href="../../img/monster3.png">
+                                <img class="imgsliders" src="../../img/monster3.png" alt="Third slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a data-lightbox="roadtrip" href="../../img/monster4.png">
+                                <img class="imgsliders" src="../../img/monster4.png" alt="Fourth slide">
                             </a>
                         </div>
                     </div>

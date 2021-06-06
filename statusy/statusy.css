@@ -1,0 +1,234 @@
+.active {
+    border-top: whitesmoke 5px solid !important;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+}
+
+.nav-link {
+    border-top: whitesmoke 1px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    transition: 0.3s;
+    border-top: whitesmoke 5px solid !important;
+}
+
+header {
+    background-image: url("../img/pozadi-header.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 60px;
+    text-align: center;
+    border: black 5px solid;
+
+}
+ 
+body {
+    background-image: url("../img/wooden-background.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+
+h1 {
+    font-size: 60px !important;
+    font-family: 'Girassol', cursive !important;
+    text-shadow: 5px 5px 3px black;
+}
+
+main {
+    border:black solid 2px;
+    border-top: none;
+    background-color: rgba(245, 245, 245, 0.753) !important;
+}
+
+
+
+/* #navbarr {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+}
+
+.btn-secondary {
+    color: white !important;
+}
+
+.active {
+    background: rgb(82, 82, 82) !important;
+}
+
+*/
+
+#center-text {
+    margin: 0 auto;
+}
+
+nav {
+    background-image: url(../img/navbar2.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+a {
+    color: whitesmoke !important;
+}
+
+h2 {
+    text-decoration: underline solid black 2px;
+    font-size: 40px !important;
+    text-align: center;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 574px) {
+    .nav-link {
+        border-top: none !important;
+    }
+    .nav-link:hover {
+        border-top: none !important;
+    }
+    
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+#syn:hover {
+    background-image: url(../img/syn.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#ske:hover {
+    background-image: url(../img/ske.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#nor:hover {
+    background-image: url(../img/nor.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#mon:hover {
+    background-image: url(../img/mon.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#sco:hover {
+    background-image: url(../img/sco.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#nil:hover {
+    background-image: url(../img/nil.png);
+    transition: 0.5s;
+    color: white !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+#obe:hover {
+    background: rgb(126, 126, 126) !important;
+    transition: 0.5s;
+    color: white !important;
+}
+
+/*
+
+table {
+    width: 100%;
+   
+}
+
+td, tr, th {
+    border: black 1px solid !important;
+    border-collapse: collapse;
+}
+
+.popis {
+    padding-right: 250px !important;
+}
+
+@media only screen and (max-width: 472px) {
+    .popis {
+        padding-right: 150px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .popis {
+        padding-right: 100px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 472px) {
+    .popis {
+        padding-right: 50px !important;
+    }
+    
+}
+*/
+
+[colspan] {
+    margin-right: 250px !important;
+}
+
+table {
+    background-color: white;
+}
+
+th {
+    text-align: center !important;
+}

@@ -1,3 +1,25 @@
+.active {
+    border-top: whitesmoke 5px solid !important;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+}
+
+.nav-link {
+    border-top: whitesmoke 1px solid;
+    padding-top: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    transition: 0.3s;
+    border-top: whitesmoke 5px solid !important;
+}
+
 header {
     background-image: url("../img/pozadi-header.png") !important;
     background-repeat: no-repeat !important;
@@ -29,19 +51,7 @@ main {
     background-color: rgba(245, 245, 245, 0.753) !important;
 }
 
-.active {
-    text-decoration: overline solid white 5px !important;
-}
 
-.nav-item {
-    transition: 0.3s;
-    text-decoration: overline solid white 1px;
-}
-
-.nav-item:hover {
-    text-decoration: overline solid white 5px !important;
-    transition: 0.3s;
-}
 
 /* #navbarr {
     display: flex !important;
@@ -98,9 +108,23 @@ figure {
     text-align: center;
 }
 
+.main-img {
+    width: 70%  ;
+}
+
 @media only screen and (max-width: 800px) {
     .main-img {
         width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 574px) {
+    .nav-link {
+        border-top: none !important;
+    }
+    .nav-link:hover {
+        border-top: none !important;
     }
     
 }
