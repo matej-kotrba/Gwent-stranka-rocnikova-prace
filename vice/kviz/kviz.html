@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <title>Kvíz o hře a světu hry Gwent</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <link rel="icon" href="../img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./kviz.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+  <meta name="description" content="Základní pravidla hry Gwent">
+  <meta name="description" content="Kvíz, Quiz">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../img/navbar-logo.png"
+        alt="Domovská stránka"></a>
+    <button class="navbar-toggler d-lg-none text-dark" type="button" data-toggle="collapse"
+      data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+      aria-label="Toggle navigation"><i class="fa fa-bars text-white" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../../uvod/uvod.html">Pravidla hry</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Frakce </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId1">
+            <a class="dropdown-item" id="obe" href="../../frakce/index.html">Obecné informace</a>
+            <a class="dropdown-item" id="syn" href="../../frakce/syndicate/syndicate.html">Syndicate</a>
+            <a class="dropdown-item" id="ske" href="../../frakce/skellige/skellige.html">Skellige</a>
+            <a class="dropdown-item" id="nor" href="../../frakce/northern-realms/northern-realms.html">Northern Realms</a>
+            <a class="dropdown-item" id="mon" href="../../frakce/monsters/monsters.html">Monsters</a>
+            <a class="dropdown-item" id="sco" href="../../frakce/scoiatael/scoiatael.html">Scoia'tael</a>
+            <a class="dropdown-item" id="nil" href="../../frakce/nilfgaard/nilfgaard.html">Nilfgaard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Efekty</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="../../keyword/keyword.html">Keywords</a>
+            <a class="dropdown-item" href="../../statusy/statusy.html">Statusy</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId3" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Více</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Kvíz</a>
+              <a class="dropdown-item" href="#">Vývojáři</a>
+            </div>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+  <header class="container-fluid">
+    <h1 class="text-white">Kvíz</h1>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div id="center-text" class="col-lg-8 col-md-10 col-sm-12">
+        <form>
+            <p class="alert alert-dark otazka">1. Která postava se nachází jako karta nejvíce ?</p>
+            <div class="form-group row">
+                <label for="postava" class="col-md-2 col-form-label">Jméno:</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="kral" id="kral">
+                        <option>Triss Merigold</option>
+                        <option>Yennefer of Vengerberg</option>
+                        <option>Dandelion</option>
+                        <option>Geralt of Rivia</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved1">Geralt of Rivia</p>
+                
+            <hr>
+            <p class="alert alert-dark otazka">2. Kolik je frakcí ve hře Gwent pokud počítáme i neutrální ?</p>
+            <div class="form-group row">
+                <label for="frakce" class="col-md-2 col-form-label">Počet</label>
+                <div class="col-md-6">
+                    <input type="number" class="form-control" name="frakce" id="frakce" value="4" title="Uveďte správný počet.">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved2">7</p>
+                
+            <hr>
+            <p class="alert alert-dark otazka">3. 
+            </p>
+            <div class="form-group row">
+                <label for="kral" class="col-md-2 col-form-label">Postava(mág)</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="kral" id="kral">
+                        <option>Garen</option>
+                        <option>Zed</option>
+                        <option selected="">Sion</option>
+                        <option>Veigar</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Veigar
+                (<a href="https://na.leagueoflegends.com/en-us/champions/veigar/">https://na.leagueoflegends.com/en-us/champions/veigar/</a>
+                )</p>
+
+            <hr>
+            <p class="alert alert-warning otazka">4. Vyberte pouze mýtické předměty.</p>
+            <div class="form-group row">
+                <label for="prezident" class="col-md-3 col-form-label">Mýtické předměty</label>
+                <div class="col-md-9">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="eclipse" id="eclipse" value="Eclipse"> Eclipse
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="galeforce" id="galeforce" value="Galeforce"> Galeforce
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="long sword" id="long sword" value="Long sword"> Long sword
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="riftmaker" id="riftmaker" value="Riftmaker"> Riftmaker
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved4">Eclipse, Galeforce, Riftmaker
+                (<a href="https://leagueoflegends.fandom.com/wiki/Mythic_item">https://leagueoflegends.fandom.com/wiki/Mythic_item</a>
+                )</p>
+
+            <hr>
+            <p class="alert alert-warning otazka">5. Vyberte v jaké minutě se zrodí poskoci poprvé.</p>
+            <div class="form-group row">
+                <label for="bitva" class="col-md-3 col-form-label">Zrození poskoků</label>
+                <div class="col-md-9">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="minioni" id="2:00" value="checkedValue"> 2:00
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="minioni" id="1:00" value="checkedValue">
+                            1:00
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="minioni" id="1:05" value="checkedValue">
+                            1:05
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="minioni" id="1:30" value="checkedValue"> 1:30
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved5">1:05
+                (<a href="https://leagueoflegends.fandom.com/wiki/Minion_(League_of_Legends)">https://leagueoflegends.fandom.com/wiki/Minion_(League_of_Legends)</a>
+                )</p>
+
+            <hr>
+            <p class="alert alert-warning otazka">Vypište jména všech draků ve hře.</p>
+            <div class="form-group row">
+                <label for="bitva" class="col-md-2 col-form-label">Draci ve hře</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="hymna" id="hymna" rows="5"></textarea>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved6">Ocean dragon, Infernal dragon, Cloud dragon, Mountain dragon, Elder dragon
+                (<a href="https://www.mobafire.com/league-of-legends/wiki/minions/dragon">https://www.mobafire.com/league-of-legends/wiki/minions/dragon</a>
+                )</p>
+
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="odpoved1 odpoved2 odpoved3 odpoved4 odpoved5 odpoved6">Řešení kvízu</button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

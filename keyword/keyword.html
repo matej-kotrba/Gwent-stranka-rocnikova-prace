@@ -56,6 +56,14 @@
             <a class="dropdown-item" href="../statusy/statusy.html">Statusy</a>
           </div>
         </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId3" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Více</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="../vice/kviz/kviz.html">Kvíz</a>
+              <a class="dropdown-item" href="#">Vývojáři</a>
+            </div>
+          </li>
       </ul>
 
     </div>
@@ -63,7 +71,9 @@
   <header class="container-fluid">
     <h1 class="text-white">Keywords</h1>
   </header>
-
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
   <main class="container">
     <table class="table table-bordered table-striped table-hover">
         <thead class="bg-white text-dark">
@@ -321,10 +331,28 @@
 
   </footer>
 
+<script>
+  var bar = document.getElementById("bar");
 
-
+  window.onscroll = function() {
+    scrollIndicator()
+  };
+  
+  function scrollIndicator() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = 100;
+    
+    if (height > 0) {
+      scrolled = (winScroll / height) * 100;
+    }
+  
+    bar.style.height = scrolled + "%";
+  }
+ </script>   
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
