@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" />
+    <link rel="icon" href="../../img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
   <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-  <meta name="description" content="Základní pravidla hry Gwent">
-  <meta name="description" content="Kvíz, Quiz">
+  <meta name="description" content="Kvíz o hře Gwent">
+  <meta name="keyword" content="Kvíz, Quiz">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -78,7 +79,7 @@
             <div class="form-group row">
                 <label for="postava" class="col-md-2 col-form-label">Jméno:</label>
                 <div class="col-md-10">
-                    <select class="form-control" name="kral" id="kral">
+                    <select class="form-control" name="postava" id="postava">
                         <option>Triss Merigold</option>
                         <option>Yennefer of Vengerberg</option>
                         <option>Dandelion</option>
@@ -99,53 +100,68 @@
             <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved2">7</p>
                 
             <hr>
-            <p class="alert alert-dark otazka">3. 
+            <p class="alert alert-dark otazka">3. Jaká karta patří do Northern Realms ? 
             </p>
             <div class="form-group row">
-                <label for="kral" class="col-md-2 col-form-label">Postava(mág)</label>
-                <div class="col-md-10">
-                    <select class="form-control" name="kral" id="kral">
-                        <option>Garen</option>
-                        <option>Zed</option>
-                        <option selected="">Sion</option>
-                        <option>Veigar</option>
-                    </select>
-                </div>
-            </div>
-            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Veigar
-                (<a href="https://na.leagueoflegends.com/en-us/champions/veigar/">https://na.leagueoflegends.com/en-us/champions/veigar/</a>
-                )</p>
+              <label for="karta" class="col-md-3 col-form-label">Karta</label>
+              <div class="col-md-9">
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="karty" id="nekker" value="checkedValue">
+                          Nekker 
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="karty" id="an-craite-warrior" value="checkedValue">
+                          An Craite warrior
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="karty" id="kaedweni-revenant" value="checkedValue">
+                          Kaedweni revenant
+                      </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="karty" id="inflitator" value="checkedValue"> Inflitator
+                      </label>
+                  </div>
+              </div>
+          </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Kaedweni revenant
+                </p>
 
             <hr>
-            <p class="alert alert-warning otazka">4. Vyberte pouze mýtické předměty.</p>
+            <p class="alert alert-dark otazka">4. Které expanze patří do hry ?</p>
             <div class="form-group row">
-                <label for="prezident" class="col-md-3 col-form-label">Mýtické předměty</label>
+                <label for="prezident" class="col-md-3 col-form-label">Gwent expanze:</label>
                 <div class="col-md-9">
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="eclipse" id="eclipse" value="Eclipse"> Eclipse
+                            <input class="form-check-input" type="checkbox" name="eclipse" id="eclipse" value="Whispers of the old gods">Whispers of the old gods
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="galeforce" id="galeforce" value="Galeforce"> Galeforce
+                            <input class="form-check-input" type="checkbox" name="iron-judgment" id="iron-judgment" value="Iron judgment">Iron judgment
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="long sword" id="long sword" value="Long sword"> Long sword
+                            <input class="form-check-input" type="checkbox" name="crimson-curse" id="crimson-curse" value="Crimson curse">Crimson curse
                         </label>
                     </div>
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="riftmaker" id="riftmaker" value="Riftmaker"> Riftmaker
+                            <input class="form-check-input" type="checkbox" name="kobolds-and-catacombs" id="kobolds-and-catacombs" value="Kobolds and Catacombs">Kobolds and Catacombs
                         </label>
                     </div>
                 </div>
             </div>
-            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved4">Eclipse, Galeforce, Riftmaker
-                (<a href="https://leagueoflegends.fandom.com/wiki/Mythic_item">https://leagueoflegends.fandom.com/wiki/Mythic_item</a>
-                )</p>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved4">Iron jugment, Crimson curse
+                </p>
 
             <hr>
             <p class="alert alert-warning otazka">5. Vyberte v jaké minutě se zrodí poskoci poprvé.</p>
