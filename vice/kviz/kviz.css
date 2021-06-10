@@ -205,3 +205,30 @@ figure {
 form {
     margin-top: 20px;
 }
+
+.range-wrap {
+    position: relative;
+    margin: 0 auto 3rem;
+  }
+  .range {
+    width: 100%;
+  }
+  .bubble {
+    background: grey;
+    color: white;
+    margin-top: 30px;
+    padding: 4px 12px;
+    position: absolute;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bubble::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: grey;
+    top: -1px;
+    left: 50%;
+  }
