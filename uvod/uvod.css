@@ -33,7 +33,7 @@ header {
  
 
 body {
-    background-image: url("../img/wooden-background.png") !important;
+    background-image: url("../img/kviz.png") !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
@@ -48,7 +48,7 @@ h1 {
 main {
     border:black solid 2px;
     border-top: none;
-    background-color: rgba(245, 245, 245, 0.753) !important;
+    background-color: rgba(245, 245, 245, 0.904) !important;
 }
 
 

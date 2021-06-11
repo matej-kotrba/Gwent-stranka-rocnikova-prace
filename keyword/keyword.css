@@ -36,8 +36,8 @@ header {
 }
  
 body {
-    background-image: url("../img/wooden-background.png") !important;
-    background-repeat: no-repeat !important;
+    background-image: url("../img/kviz.png") !important;
+    background-attachment: fixed;
     background-size: cover !important;
     background-position: center !important;
     font-family:Arial, Helvetica, sans-serif !important;
@@ -53,6 +53,7 @@ main {
     border:black solid 2px;
     border-top: none;
     background-color: rgba(245, 245, 245, 0.753) !important;
+    padding-top: 20px;
 }
 
 
