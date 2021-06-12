@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .active {
     border-top: whitesmoke 5px solid !important;
     padding-top: 0px !important;
@@ -20,25 +24,54 @@
     border-top: whitesmoke 5px solid !important;
 }
 
+#jedna {
+    scroll-margin-top: 100px;
+  }
+  #dva {
+    scroll-margin-top: 100px;
+  }
+  #tri {
+    scroll-margin-top: 100px;
+  }
+  #ctyri {
+    scroll-margin-top: 100px;
+  }
+  #pet {
+    scroll-margin-top: 100px;
+  }
+  #sest {
+    scroll-margin-top: 100px;
+  }
+  #sedm {
+    scroll-margin-top: 100px;
+  }
+  #osm {
+    scroll-margin-top: 100px;
+  }
+  #devet {
+    scroll-margin-top: 100px;
+  }  
+
 header {
-   /* background-image: url("../../img/pozadi-header.png") !important;
+    background-image: url("../img/cdprojekt-header.png") !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-position: center !important; */
-    padding: 60px;
+    background-position: center !important; 
+    padding: 170px;
     text-align: center;
     border: black 1px solid;
-    background-image: linear-gradient(to right, rgb(17, 88, 79), rgb(170, 170, 170), rgb(17, 88, 79));
-
+    /*background-image: linear-gradient(to right, rgb(17, 88, 79), rgb(170, 170, 170), rgb(17, 88, 79));
+    */
 }
  
 
 body {
-    background-image: url("../img/kviz.png") !important;
+   /* background-image: url("../img/kviz.png") !important;
     background-attachment: fixed;
     background-size: cover !important;
     background-position: center !important;
    /* background-image: linear-gradient(to right, rgb(185, 185, 185), rgb(155, 155, 155)); */
+   background-color: black !important;
     font-family:Arial, Helvetica, sans-serif !important;
 }
 h1 {
@@ -48,9 +81,9 @@ h1 {
 }
 
 main {
-    border:black solid 2px;
-    border-top: none;
-    background-color: rgba(245, 245, 245, 0.959) !important;
+    
+    color: white;
+    
 }
 
 
@@ -87,7 +120,7 @@ a {
 }
 
 h2 {
-    text-decoration: underline solid black 2px;
+    font-family: 'Girassol', cursive !important;
     font-size: 40px !important;
     text-align: center;
     margin-top: 20px !important;
@@ -96,14 +129,70 @@ h2 {
     margin-right: auto !important;
 }
 
+iframe {
+    margin-top: 20px;
+}
+
+.row {
+    margin: 0 auto !important;
+}
+
 p {
+    padding-top: 20px;
     font-size: 18px;
+    text-align: left;
+
+}
+
+.flex-box {
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    border-bottom: white solid 2px;
+}
+
+.ul-text {
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+    margin-bottom: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: white solid 2px;
+    border-top: white solid 2px;
+}
+
+.ul-text > li {
+    font-family: cursive !important;
+    list-style-type: square;
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
+}
+
+.image:hover {
+    outline: white 2px solid;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.image {
+    border-radius: 30px;
+    transition: 0.1s;
+}
+
+@keyframes zmenaBarvy {
+    0% {outline: white 4px solid;}
+    25% {outline: black 4px solid;}
+    50% {outline: white 4px solid;}
+    75% {outline: black 4px solid;}
+    100% {outline: white 4px solid;}
+}
+
+.image {
+    width: 500px;
 }
 
 figure {
@@ -118,6 +207,10 @@ figure {
     .main-img {
         width: 80%;
     }
+    .ul-text {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
     
 }
 
@@ -128,6 +221,9 @@ figure {
     .nav-link:hover {
         border-top: none !important;
     }
+    .image {
+        width: 400px;
+    }
     
 }
 
@@ -135,7 +231,15 @@ figure {
     .main-img {
         width: 100%;
     }
-    
+    .image {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .image {
+        width: 200px;
+    }
 }
 
 .dropdown-item {
@@ -202,33 +306,27 @@ figure {
     color: white !important;
 }
 
-form {
-    margin-top: 20px;
-}
 
-.range-wrap {
+.hover-underline-animation {
+    display: inline-block;
     position: relative;
-    margin: 0 auto 3rem;
-  }
-  .range {
-    width: 100%;
-  }
-  .bubble {
-    background: grey;
     color: white;
-    margin-top: 30px;
-    padding: 4px 12px;
-    position: absolute;
-    border-radius: 4px;
-    left: 50%;
-    transform: translateX(-50%);
   }
-  .bubble::after {
-    content: "";
+  
+  .hover-underline-animation:after {
+    content: '';
     position: absolute;
-    width: 2px;
+    width: 100%;
+    transform: scaleX(0);
     height: 2px;
-    background: grey;
-    top: -1px;
-    left: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }

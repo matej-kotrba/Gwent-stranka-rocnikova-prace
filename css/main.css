@@ -24,6 +24,11 @@ body, html {
     
 }
 
+iframe {
+    width: 600px;
+    height: 300px;
+}
+
 .content {
     z-index: 2;
     position: absolute;
@@ -523,3 +528,4 @@ h2 {
     transition: 0.5s;
     color: white !important;
 }
+

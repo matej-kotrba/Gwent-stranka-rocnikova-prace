@@ -60,7 +60,7 @@ nav {
 }
 
 a {
-    color: whitesmoke !important;
+    text-decoration: none !important;
 }
 
 h2 {
@@ -90,6 +90,10 @@ figure {
 
 .dropdown-item {
     color: black !important;
+}
+
+.nav-link {
+    color: whitesmoke !important;
 }
 
 #syn:hover {
@@ -172,7 +176,7 @@ figure {
 
 @media only screen and (max-width: 1200px) {
     .imgsliders {
-        width: 60%;
+        width: 100%;
         height: 80%;
     }
 }
@@ -204,3 +208,27 @@ figure {
 .odkaz {
     color: rgb(52, 127, 214) !important;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -110,6 +110,14 @@ figure {
 
 .main-img {
     width: 70%  ;
+    border-radius: 15px;
+    border: black 3px solid;
+    box-shadow: 6px 6px 3px rgb(32, 32, 32);
+}
+
+figcaption {
+    margin-top: 10px;
+    
 }
 
 @media only screen and (max-width: 800px) {

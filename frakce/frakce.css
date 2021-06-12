@@ -150,15 +150,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
-    border-right:0;
-    box-shadow: 5px 5px 10px rgb(112, 66, 6);
+    border-right:0; 
+    outline: rgb(197, 145, 0) solid 0px;
+    box-shadow: black 4px 4px 3px;
 }
 
 .flex-box > h2 {
@@ -201,15 +202,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
     border-right:0;
-    box-shadow: 5px 5px 5px rgb(68, 6, 68);
+    outline: rgb(136, 9, 255) solid 0px;
+    box-shadow: black 4px 4px 3px;
 }
 
 .flex-box2 {
@@ -222,15 +224,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
     border-right:0;
-    box-shadow: 5px 5px 5px rgb(19, 53, 126);
+    outline: rgb(6, 92, 190) solid 0px;
+    box-shadow: black 4px 4px 3px;
 }
 
 .flex-box3 {
@@ -243,15 +246,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
     border-right:0;
-    box-shadow: 5px 5px 5px rgb(70, 8, 8); 
+    outline: rgb(145, 0, 0) solid 0px; 
+    box-shadow: black 4px 4px 3px;
 }
 
 .flex-box4 {
@@ -264,15 +268,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
     border-right:0;
-    box-shadow: 5px 5px 5px rgb(30, 70, 7);
+    outline: rgb(16, 94, 0) solid 0px; 
+    box-shadow: black 4px 4px 3px;
 }
 
 .flex-box5 {
@@ -285,15 +290,16 @@ figure {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 150px 0;
+    padding: 120px 0;
     filter:grayscale(1);
     transition: 0.5s;
-    border-radius: 30px 30px 0 0;
-    margin-top: 20px;
+    border-radius: 30px 30px 30px;
+    margin-top: 30px;
     border-top:0;
     border-left:0;
     border-right:0;
-    box-shadow: 5px 5px 5px rgb(110, 109, 20);
+    outline: #e5b971 solid 0px; 
+    box-shadow: black 4px 4px 3px;
 }
 
 a:hover {
@@ -305,13 +311,20 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: rgb(197, 145, 0) solid 4px;
+    box-shadow: none;
+    color: black !important;
 }
+
 
 .flex-box1:hover {
     filter: none !important;
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: rgb(161, 60, 255) solid 4px;
+    box-shadow: none;
+    color: black !important;
 }
 
 .flex-box2:hover {
@@ -319,6 +332,9 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: rgb(6, 92, 190) solid 4px;
+    box-shadow: none;
+    color: black !important;
 }
 
 .flex-box3:hover {
@@ -326,6 +342,9 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: rgb(145, 0, 0) solid 4px; 
+    box-shadow: none;
+    color: black !important;
 }
 
 .flex-box4:hover {
@@ -333,6 +352,9 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: rgb(16, 94, 0) solid 4px;
+    box-shadow: none;
+    color: black !important;
 }
 
 .flex-box5:hover {
@@ -340,6 +362,9 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
+    outline: #e5b971 solid 4px; 
+    box-shadow: none;
+    color: black !important;
 }
 
 .flex-box > h2 {
@@ -374,6 +399,48 @@ a:hover {
 
 .dropdown-item {
     color: black !important;
+}
+
+.flex-box:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.flex-box1:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.flex-box2:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.flex-box3:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.flex-box4:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
+}
+
+.flex-box5:hover > h2 {
+    color: white !important;
+    text-decoration: none;
+    
+    transition: 0.5s;
 }
 
 #syn:hover {

@@ -7,3 +7,15 @@
     background-color: rgb(131, 131, 131) !important;
     color: whitesmoke !important;
 }
+
+.nav-link {
+    color: rgba(197, 197, 197, 0.856) !important;
+}
+
+.nav-link:hover {
+    color: rgba(245, 245, 245) !important;
+}
+
+.active {
+    color: white !important;
+}
