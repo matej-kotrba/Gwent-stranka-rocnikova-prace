@@ -60,7 +60,7 @@
                     </div>
                   </li>
             </ul>
-            
+            <i onclick="myFunction(this)" class="fa fa-sun-o" aria-hidden="true"></i>            
         </div>
     </nav>
     <header class="container-fluid">
@@ -118,7 +118,12 @@
       </div>
       </div>
     </main>
-  
+    <script>
+      function myFunction(x) {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        x.classList.toggle("fa-moon-o");
+      }</script>
     <footer>
   
     </footer>

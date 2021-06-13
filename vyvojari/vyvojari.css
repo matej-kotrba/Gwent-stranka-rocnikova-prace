@@ -173,7 +173,7 @@ img {
 }
 
 .image:hover {
-    outline: white 2px solid;
+    border: white 1px solid;
     transform: scale(1.1);
     transition: 0.2s;
 }
@@ -181,6 +181,10 @@ img {
 .image {
     border-radius: 30px;
     transition: 0.1s;
+}
+
+.nadpis {
+    font-size: 25px;
 }
 
 @keyframes zmenaBarvy {
@@ -330,3 +334,27 @@ figure {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  #top-btn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+
+#top-btn:hover {
+    color: rgb(44, 44, 44);
+    background-color: white;
+    transition: 0.5s;
+}  

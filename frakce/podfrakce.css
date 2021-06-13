@@ -50,6 +50,7 @@ main {
     border:black solid 2px;
     border-top: none;
     background-color: rgba(245, 245, 245, 0.753) !important;
+    padding-bottom: 100px;
 }
 
 nav {
@@ -232,3 +233,11 @@ figure {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+.carousel-control-prev {
+    margin-left: -50px;
+}
+
+.carousel-control-next {
+    margin-right: -50px;
+}

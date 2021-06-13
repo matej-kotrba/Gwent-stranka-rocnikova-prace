@@ -46,9 +46,10 @@ h1 {
 }
 
 main {
+    padding-top: 20px;
     border:black solid 2px;
     border-top: none;
-    background-color: rgba(245, 245, 245, 0.753) !important;
+    background-color: rgb(44, 44, 44) !important;
 }
 
 
@@ -235,4 +236,34 @@ th {
 
 .odkaz {
     color: rgb(52, 127, 214) !important;
+}
+
+.dark-mode {
+    background-color: black !important;
+    color: rgb(240, 240, 240);
+}
+
+.dark-mode th {
+    background: rgb(58, 58, 58) !important;
+    color: white;
+}
+
+.dark-mode table {
+    background: rgb(41, 41, 41) !important;
+    color: white;
+}
+
+.dark-mode td:hover {
+    background: rgb(58, 58, 58) !important;
+    color: white;
+}
+
+.dark-mode th:hover {
+    background: rgb(58, 58, 58) !important;
+    color: white;
+}
+
+.dark-mode tr:hover {
+    background: rgb(58, 58, 58) !important;
+    color: white !important;
 }

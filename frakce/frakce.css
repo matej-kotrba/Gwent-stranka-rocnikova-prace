@@ -145,7 +145,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/syndicate.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -154,12 +153,8 @@ figure {
     filter:grayscale(1);
     transition: 0.5s;
     border-radius: 30px 30px 30px;
-    margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0; 
-    outline: rgb(197, 145, 0) solid 0px;
-    box-shadow: black 4px 4px 3px;
+    margin-top: 30px; 
+    box-shadow: rgb(197, 145, 0) 0px 0px 15px !important;
 }
 
 .flex-box > h2 {
@@ -197,7 +192,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/skellige.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -207,10 +201,7 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 30px;
     margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    outline: rgb(136, 9, 255) solid 0px;
+    box-shadow: rgb(136, 9, 255) 0px 0px 15px !important;
     box-shadow: black 4px 4px 3px;
 }
 
@@ -219,7 +210,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/northernrealms.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -229,10 +219,7 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 30px 30px;
     margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    outline: rgb(6, 92, 190) solid 0px;
+    box-shadow: rgb(6, 92, 190) 0px 0px 15px !important;
     box-shadow: black 4px 4px 3px;
 }
 
@@ -241,7 +228,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/monster.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -251,10 +237,7 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 30px;
     margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    outline: rgb(145, 0, 0) solid 0px; 
+    box-shadow: rgb(145, 0, 0) 0px 0px 15px !important; 
     box-shadow: black 4px 4px 3px;
 }
 
@@ -263,7 +246,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/scoiateal.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -273,10 +255,7 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 30px;
     margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    outline: rgb(16, 94, 0) solid 0px; 
+    box-shadow: rgb(16, 94, 0) 0px 0px 15px !important; 
     box-shadow: black 4px 4px 3px;
 }
 
@@ -285,7 +264,6 @@ figure {
     flex-wrap: wrap !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    border: black solid 1px;
     background-image: url(../img/nilfgaard.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -295,10 +273,7 @@ figure {
     transition: 0.5s;
     border-radius: 30px 30px 30px;
     margin-top: 30px;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-    outline: #e5b971 solid 0px; 
+    box-shadow: #e5b971 0px 0px 15px !important; 
     box-shadow: black 4px 4px 3px;
 }
 
@@ -311,8 +286,7 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
-    outline: rgb(197, 145, 0) solid 4px;
-    box-shadow: none;
+    box-shadow: rgb(197, 145, 0) 0px 0px 15px !important;
     color: black !important;
 }
 
@@ -322,7 +296,6 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
-    outline: rgb(161, 60, 255) solid 4px;
     box-shadow: none;
     color: black !important;
 }
@@ -332,7 +305,6 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
-    outline: rgb(6, 92, 190) solid 4px;
     box-shadow: none;
     color: black !important;
 }
@@ -341,8 +313,7 @@ a:hover {
     filter: none !important;
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
-    cursor: pointer;
-    outline: rgb(145, 0, 0) solid 4px; 
+    cursor: pointer; 
     box-shadow: none;
     color: black !important;
 }
@@ -352,7 +323,6 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
-    outline: rgb(16, 94, 0) solid 4px;
     box-shadow: none;
     color: black !important;
 }
@@ -362,7 +332,6 @@ a:hover {
     transition: 0.5s;
     transform: translateY(-10px) scale(1.02);
     cursor: pointer;
-    outline: #e5b971 solid 4px; 
     box-shadow: none;
     color: black !important;
 }

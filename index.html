@@ -162,9 +162,9 @@
 
     </div>
     <!--Top-button-->
-    <button onclick="topFunction()" id="top-btn" title="Scrolls back to top"><i class="fa fa-arrow-up fa-2x"
-        aria-hidden="true"></i>
-    </button>
+    <!--Top-button-->
+<button onclick="topFunction()" id="top-btn" title="Scrolls back to top"><i class="fa fa-2x fa-angle-up"></i>
+</button>
   </main>
   <footer id="footerr" class="container-fluid bg-dark p-3">
     <div class="row">
@@ -180,7 +180,7 @@
         <a href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw" id="odkaz" target="_blank"><i
             class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i></a>
             <a href="https://www.playgwent.com/en/"
-          id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3" aria-hidden="true"></i></a><a
+          id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3 text-white" aria-hidden="true"></i></a><a
           href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank" id="odkaz2"><i
             class="fa fa-steam fa-3x" aria-hidden="true"></i></a>
         <a href="https://www.gog.com/game/gwent_the_witcher_card_game" target="_blank"><img src="./img/gog.PNG"
@@ -200,7 +200,7 @@
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";

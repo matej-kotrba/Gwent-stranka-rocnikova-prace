@@ -19,3 +19,31 @@
 .active {
     color: white !important;
 }
+
+.dark-mode {
+    background-color: black !important;
+    color: rgb(240, 240, 240);
+}
+
+  .dark-mode > main {
+    background-color: rgba(44, 44, 44, 0.973) !important;
+    
+  } 
+  
+  .dark-mode h2 {
+      text-decoration: underline solid rgb(240, 240, 240) 2px !important;
+  } 
+
+.fa-sun-o {
+    font-size: 50px !important;
+    user-select: none;
+    color: white !important;
+    cursor: pointer;
+}
+
+.fa-moon-o {
+    font-size: 50px !important;
+    user-select: none;
+    color: white !important;
+    cursor: pointer;
+}
