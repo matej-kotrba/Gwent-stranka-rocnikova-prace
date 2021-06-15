@@ -3,8 +3,8 @@
 }
 
 .dropdown-item:hover {
-    transition: 0.3s;
-    background-color: rgb(131, 131, 131) !important;
+    transition: 0s;
+    background-image: linear-gradient(to right, black, rgb(6, 139, 73));
     color: whitesmoke !important;
 }
 
