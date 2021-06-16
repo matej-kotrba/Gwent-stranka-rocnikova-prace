@@ -241,3 +241,7 @@ figure {
 .carousel-control-next {
     margin-right: -50px;
 }
+
+.dark-mode {
+    background-image: url("../img/darkwood.png") !important;
+}
