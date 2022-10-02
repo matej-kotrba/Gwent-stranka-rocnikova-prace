@@ -1,247 +1,396 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <title>Gwent: The Witcher Card Game - Guide</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="js/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="icon"
+      href="img/gwent-logo-upraveno.png"
+      type="image/png"
+      sizes="50x50"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Guide stránka ohledně hry Gwent: The Witcher Card Game"
+    />
+    <meta name="keywords" content="Gwent" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Gwent: The Witcher Card Game - Guide</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="js/dist/css/lightbox.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="icon" href="img/gwent-logo-upraveno.png" type="image/png" sizes="50x50">
-  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-  <meta name="description" content="Guide stránka ohledně hry Gwent: The Witcher Card Game">
-  <meta name="keywords" content="Gwent">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-
-<body>
-  <header>
-
-    <div class="content col-sm-10 col-md-8 col-lg-6 col-xl-4">
-      <h1>Gwent: The Witcher Card Game</h1>
+  <body>
+    <header>
+      <div class="content col-sm-10 col-md-8 col-lg-6 col-xl-4">
+        <h1>Gwent: The Witcher Card Game</h1>
+      </div>
+    </header>
+    <div class="bg"></div>
+    <div class="center">
+      <iframe
+        src="https://www.youtube.com/embed/spcsH14-U9E"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
-  </header>
-  <div class="bg"></div>
-  <div class="center">
-    <iframe src="https://www.youtube.com/embed/spcsH14-U9E" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-  </div>
-  <main>
-    <!--Nebo pokracovani-->
-    <div id="button-stred" class="p-3">
-      <div id="nebo"><a href="#asd" id="btn-barva">Přejít na úvod</a>
-        <p id="p-btn" class="p-zindex">NEBO SI VYBERTE PODKATEGORII</p>
-      </div>
-    </div>
-
-    <!--Dropdowny-->
-    <div class="flex-box">
-      <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
-          Základy hry
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="./uvod/uvod.html">Úvod</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
-          Frakce
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" id="obe" href="./frakce/index.html">Obecné informace</a>
-          <a id="syn" class="dropdown-item" href="./frakce/syndicate/syndicate.html">Syndicate</a>
-          <a id="ske" class="dropdown-item" href="./frakce/skellige/skellige.html">Skellige</a>
-          <a id="nor" class="dropdown-item" href="./frakce/northern-realms/northern-realms.html">Northern Realms</a>
-          <a id="mon" class="dropdown-item" href="./frakce/monsters/monsters.html">Monters</a>
-          <a id="sco" class="dropdown-item" href="./frakce/scoiatael/scoiatael.html">Scoia'tael</a>
-          <a id="nil" class="dropdown-item" href="#">Nilfgaard</a>
+    <main>
+      <!--Nebo pokracovani-->
+      <div id="button-stred" class="p-3">
+        <div id="nebo">
+          <a href="#asd" id="btn-barva">Přejít na úvod</a>
+          <p id="p-btn" class="p-zindex">NEBO SI VYBERTE PODKATEGORII</p>
         </div>
       </div>
 
-      <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
-          Efekty
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="./keyword/keyword.html">Keywords</a>
-          <a class="dropdown-item" href="./statusy/statusy.html">Statusy</a>
+      <!--Dropdowny-->
+      <div class="flex-box">
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-dark dropdown-toggle p-3"
+            data-toggle="dropdown"
+          >
+            Základy hry
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./uvod/uvod.html">Úvod</a>
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <button type="button" class="btn btn-dark dropdown-toggle p-3" data-toggle="dropdown">
-          Více
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="./vice/kviz/kviz.html">Kvíz</a>
-          <a class="dropdown-item" href="./vyvojari/vyvojari.html">Vývojáři</a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div id="asd" class="container">
-      <h2 class="text-center">Základní informace</h2>
-      
-      <!--Collapsibles-->
-      <button type="button" class="collapsible">Základy hry</button>
-      <div class="content1">
-        <p>Ve hře Gwent se snažíte získat více bodů síly než váš protivník a díky nim poté vyhrát kolo, hraje se na dvě
-          vyhranná kola, takže je nutné si promyslet jestli chcete vaše silné karty zahrát teď a nebo si je nechat na
-          později, jelikož karty vám zůstavají do dalších kol. </p>
-      </div>
-      <button type="button" class="collapsible">Frakce</button>
-      <div class="content1">
-        <p>Ve hře se rozlišuje 6 frakcí z toho každá má vlastní karty a tím i herní styl kolem kterého se musí hrát aby
-          jste zvítězily. Frakce se dělí na Monstra, Northern Realms, Scoiatael, Skellige, Nilfgaard a Syndicate z toho
-          všechny vychází z příběhu Zaklínače. </p>
-      </div>
-      <button type="button" class="collapsible">Karty</button>
-      <div class="content1">
-        <p>Karty se dělí do 4 kategorií: Unit, Special, Artifact a Stratagem. Každá karta má také svou vzácnost a taky cenu, která při skládání vašeho balíku určuje celkovou cenu kterou nemůžete překročit.</p>
-      </div>
-      <br>
-      <h2>Obrázky</h2>
-      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ul>
-        
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a data-lightbox="roadtrip" href="img/gwent1.jpg">
-              <img class="imgsliders" src="./img/gwent1.jpg" alt="Gwent" width="500" height="300">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a data-lightbox="roadtrip" href="./img/gwent3.jpg">
-              <img class="imgsliders" src="./img/gwent3.jpg" alt="Gwent" width="500" height="300">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a data-lightbox="roadtrip" href="./img/gwent2.jpg">
-              <img class="imgsliders" src="./img/gwent2.jpg" alt="Gwent" width="500" height="300">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a data-lightbox="roadtrip" href="./img/gwent4.png">
-              <img class="imgsliders" src="./img/gwent4.png" alt="Gwent" width="500" height="300">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a data-lightbox="roadtrip" href="./img/gwent5.png">
-              <img class="imgsliders" src="./img/gwent5.png" alt="Gwent" width="500" height="300">
-            </a>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-dark dropdown-toggle p-3"
+            data-toggle="dropdown"
+          >
+            Frakce
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" id="obe" href="./frakce/index.html"
+              >Obecné informace</a
+            >
+            <a
+              id="syn"
+              class="dropdown-item"
+              href="./frakce/syndicate/syndicate.html"
+              >Syndicate</a
+            >
+            <a
+              id="ske"
+              class="dropdown-item"
+              href="./frakce/skellige/skellige.html"
+              >Skellige</a
+            >
+            <a
+              id="nor"
+              class="dropdown-item"
+              href="./frakce/northern-realms/northern-realms.html"
+              >Northern Realms</a
+            >
+            <a
+              id="mon"
+              class="dropdown-item"
+              href="./frakce/monsters/monsters.html"
+              >Monters</a
+            >
+            <a
+              id="sco"
+              class="dropdown-item"
+              href="./frakce/scoiatael/scoiatael.html"
+              >Scoia'tael</a
+            >
+            <a id="nil" class="dropdown-item" href="#">Nilfgaard</a>
           </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-dark dropdown-toggle p-3"
+            data-toggle="dropdown"
+          >
+            Efekty
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./keyword/keyword.html">Keywords</a>
+            <a class="dropdown-item" href="./statusy/statusy.html">Statusy</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-dark dropdown-toggle p-3"
+            data-toggle="dropdown"
+          >
+            Více
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./vice/kviz/kviz.html">Kvíz</a>
+            <a class="dropdown-item" href="./vyvojari/vyvojari.html"
+              >Vývojáři</a
+            >
+          </div>
+        </div>
       </div>
 
-    </div>
-    <!--Top-button-->
-    <!--Top-button-->
-<button onclick="topFunction()" id="top-btn" title="Scrolls back to top"><i class="fa fa-2x fa-angle-up"></i>
-</button>
-  </main>
-  <footer id="footerr" class="container-fluid bg-dark p-3">
-    <div class="row">
-      <div id="zapati1" class="col-xl-4 col-lg-4 col-md-12 p-2">
-        <i id="neco" data-toggle="collapse" data-target="#demo" class="bg-dark border-dark"><i
-            class="fa fa-id-card-o fa-3x" aria-hidden="true"></i></i>
-        <div id="demo" class="collapse">Matěj Kotrba - IT1</div>
+      <div id="asd" class="container">
+        <h2 class="text-center">Základní informace</h2>
+
+        <!--Collapsibles-->
+        <button type="button" class="collapsible">Základy hry</button>
+        <div class="content1">
+          <p>
+            Ve hře Gwent se snažíte získat více bodů síly než váš protivník a
+            díky nim poté vyhrát kolo, hraje se na dvě vyhranná kola, takže je
+            nutné si promyslet jestli chcete vaše silné karty zahrát teď a nebo
+            si je nechat na později, jelikož karty vám zůstavají do dalších kol.
+          </p>
+        </div>
+        <button type="button" class="collapsible">Frakce</button>
+        <div class="content1">
+          <p>
+            Ve hře se rozlišuje 6 frakcí z toho každá má vlastní karty a tím i
+            herní styl kolem kterého se musí hrát aby jste zvítězily. Frakce se
+            dělí na Monstra, Northern Realms, Scoiatael, Skellige, Nilfgaard a
+            Syndicate z toho všechny vychází z příběhu Zaklínače.
+          </p>
+        </div>
+        <button type="button" class="collapsible">Karty</button>
+        <div class="content1">
+          <p>
+            Karty se dělí do 4 kategorií: Unit, Special, Artifact a Stratagem.
+            Každá karta má také svou vzácnost a taky cenu, která při skládání
+            vašeho balíku určuje celkovou cenu kterou nemůžete překročit.
+          </p>
+        </div>
+        <br />
+        <h2>Obrázky</h2>
+        <div
+          id="myCarousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+          data-interval="5000"
+        >
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a data-lightbox="roadtrip" href="img/gwent1.jpg">
+                <img
+                  class="imgsliders"
+                  src="./img/gwent1.jpg"
+                  alt="Gwent"
+                  width="500"
+                  height="300"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a data-lightbox="roadtrip" href="./img/gwent3.jpg">
+                <img
+                  class="imgsliders"
+                  src="./img/gwent3.jpg"
+                  alt="Gwent"
+                  width="500"
+                  height="300"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a data-lightbox="roadtrip" href="./img/gwent2.jpg">
+                <img
+                  class="imgsliders"
+                  src="./img/gwent2.jpg"
+                  alt="Gwent"
+                  width="500"
+                  height="300"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a data-lightbox="roadtrip" href="./img/gwent4.png">
+                <img
+                  class="imgsliders"
+                  src="./img/gwent4.png"
+                  alt="Gwent"
+                  width="500"
+                  height="300"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a data-lightbox="roadtrip" href="./img/gwent5.png">
+                <img
+                  class="imgsliders"
+                  src="./img/gwent5.png"
+                  alt="Gwent"
+                  width="500"
+                  height="300"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
       </div>
-      <div id="zapati" class="col-xl-4 col-lg-4 col-md-12 p-2 border-left border-right">
-       <img src="./img/gwent-logo-footer.png" alt="Gwent: Logo" width="200">
+      <!--Top-button-->
+      <!--Top-button-->
+      <button onclick="topFunction()" id="top-btn" title="Scrolls back to top">
+        <i class="fa fa-2x fa-angle-up"></i>
+      </button>
+    </main>
+    <footer id="footerr" class="container-fluid bg-dark p-3">
+      <div class="row">
+        <div id="zapati1" class="col-xl-4 col-lg-4 col-md-12 p-2">
+          <i
+            id="neco"
+            data-toggle="collapse"
+            data-target="#demo"
+            class="bg-dark border-dark"
+            ><i class="fa fa-id-card-o fa-3x" aria-hidden="true"></i
+          ></i>
+          <div id="demo" class="collapse">Matěj Kotrba - IT1</div>
+          <a href="https://matejkotrba.vercel.app">Navštivte mé portfolio</a>
+        </div>
+        <div
+          id="zapati"
+          class="col-xl-4 col-lg-4 col-md-12 p-2 border-left border-right"
+        >
+          <img
+            src="./img/gwent-logo-footer.png"
+            alt="Gwent: Logo"
+            width="200"
+          />
+        </div>
+        <div
+          id="zapati2"
+          class="col-xl-4 col-lg-4 col-md-12 p-2 col-md-border-none"
+        >
+          <a
+            href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw"
+            id="odkaz"
+            target="_blank"
+            ><i class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.playgwent.com/en/" id="odkaz1" target="_blank"
+            ><i
+              class="fa fa-globe fa-3x pr-3 text-white"
+              aria-hidden="true"
+            ></i></a
+          ><a
+            href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/"
+            target="_blank"
+            id="odkaz2"
+            ><i class="fa fa-steam fa-3x" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.gog.com/game/gwent_the_witcher_card_game"
+            target="_blank"
+            ><img src="./img/gog.PNG" alt="gog" width="50" id="odkaz3"
+          /></a>
+        </div>
       </div>
-      <div id="zapati2" class="col-xl-4 col-lg-4 col-md-12 p-2 col-md-border-none">
-        <a href="https://www.youtube.com/channel/UCKS8WtM7U144j4fAU4xqiCw" id="odkaz" target="_blank"><i
-            class="fa fa-youtube-play fa-3x pr-3" aria-hidden="true"></i></a>
-            <a href="https://www.playgwent.com/en/"
-          id="odkaz1" target="_blank"><i class="fa fa-globe fa-3x pr-3 text-white" aria-hidden="true"></i></a><a
-          href="https://store.steampowered.com/app/1284410/GWENT_The_Witcher_Card_Game/" target="_blank" id="odkaz2"><i
-            class="fa fa-steam fa-3x" aria-hidden="true"></i></a>
-        <a href="https://www.gog.com/game/gwent_the_witcher_card_game" target="_blank"><img src="./img/gog.PNG"
-            alt="gog" width="50" id="odkaz3"></a>
-            
-            
-      </div>
-    </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("top-btn");
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("top-btn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!--Collpasible-->
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 400 ||
+          document.documentElement.scrollTop > 400
+        ) {
+          mybutton.style.display = "block";
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+          mybutton.style.display = "none";
         }
-      });
-    }
-  </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="./js/dist/js/lightbox-plus-jquery.min.js"></script>
-</body>
+      }
 
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!--Collpasible-->
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
 </html>
